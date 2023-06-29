@@ -1,3 +1,7 @@
-import { getMessage } from './utils';
+import express = require('express');
 
-console.log(getMessage());
+const server = express();
+
+server.listen(5000, () => {
+  console.log('Server is running on port 5000');
+});
